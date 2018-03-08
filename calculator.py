@@ -1,21 +1,21 @@
 #Addition
-def Add(a, b):
+def add(a, b):
     return (a + b)
 
 #Subtraction
-def Sub(a, b):
+def sub(a, b):
     return (a - b)
 
 #Multiplication
-def Mul(a, b):
+def mul(a, b):
     return (a * b)
 
 #Division
-def Div(a, b):
+def div(a, b):
     return (a / b)
 
 #Exponent
-def Exp(a, b):
+def exp(a, b):
     result = 1
     if b == 0:
         return 1
@@ -25,7 +25,7 @@ def Exp(a, b):
     return result
 
 #Factorial
-def Fac(a):
+def fac(a):
     result = a
     i = 1
     if a == 0 or a == 1:
@@ -56,20 +56,20 @@ while choice != 7:
         a = int(input("First Number: "))
         b = int(input("Second Number: "))
         if choice == 1:
-            print("Answer: " + str(Add(a,b)))
+            print("Answer: " + str(add(a,b)))
         elif choice == 2:
-            print("Answer: " + str(Sub(a,b)))
+            print("Answer: " + str(sub(a,b)))
         elif choice == 3:
-            print("Answer: " + str(Mul(a,b)))
+            print("Answer: " + str(mul(a,b)))
         elif choice == 4:
-            print("Answer: " + str(Div(a,b)))
+            print("Answer: " + str(div(a,b)))
     #else if the choice is 5(exponent)
     elif choice == 5:
         a = int(input("Base: "))
         b = int(input("Exponent: "))
-        print("Answer: " + str(Exp(a,b)))
+        print("Answer: " + str(exp(a,b)))
     #else if the choice is 6(factorial
     elif choice == 6:
         a = int(input("Number: "))
-        print("Answer: " + str(Fac(a)))
+        print("Answer: " + str(fac(a)))
 
